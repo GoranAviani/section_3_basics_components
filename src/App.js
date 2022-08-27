@@ -4,8 +4,10 @@ import {useState} from "react";
 
 function App() {
     const [toogleMessage, setToggleMessage] = useState("true")
+    const [counterNumber, setCounterNUmber] = useState(0)
 
     const toogleMessageFun = (toogleMessage) => {
+        setCounterNUmber(counterNumber + 1)
         if (toogleMessage === "true") {
             setToggleMessage("false")
         } else {
@@ -18,7 +20,7 @@ function App() {
             app
             <Message message={"test message"} toogleMessageFun={toogleMessageFun} toogleMessage={toogleMessage}/>
             <br/>
-            <Counter/>
+            <Counter counterNumber={counterNumber}/>
         </div>
     );
 }
