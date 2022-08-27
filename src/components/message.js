@@ -1,14 +1,6 @@
 import React, {useState} from "react";
 
 
-function changeMessageVisibility(toogleMessage, setToggleMessage) {
-    if (toogleMessage === "true") {
-        setToggleMessage("false")
-    }
-    console.log(toogleMessage)
-
-}
-
 function toogleMessageFun(toogleMessage, setToggleMessage) {
     if (toogleMessage === "true") {
         setToggleMessage("false")
