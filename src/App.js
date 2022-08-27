@@ -15,12 +15,16 @@ function App() {
         }
     }
 
+    const resetCounter = () => {
+        setCounterNUmber(0)
+    }
+
     return (
         <div>
             app
             <Message message={"test message"} toogleMessageFun={toogleMessageFun} toogleMessage={toogleMessage}/>
             <br/>
-            <Counter counterNumber={counterNumber}/>
+            <Counter counterNumber={counterNumber} resetCounter={resetCounter}/>
         </div>
     );
 }
