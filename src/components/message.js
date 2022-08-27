@@ -1,11 +1,11 @@
 import React from "react";
 
 
-function Message () {
+function Message ({message}) {
 
     return (
         <>
-        message
+        message is : {message}
         </>
     )
 }

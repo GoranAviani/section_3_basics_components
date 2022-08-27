@@ -4,7 +4,7 @@ function App() {
   return (
     <div>
      app
-        <Message/>
+        <Message message = "test message"/>
     </div>
   );
 }
