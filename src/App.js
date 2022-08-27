@@ -1,9 +1,7 @@
 import Message from "./components/message";
 
 function App() {
-
-    Cookies.set("displayMessage", "true")
-  return (
+    return (
     <div>
      app
         <Message message = "test message"/>
