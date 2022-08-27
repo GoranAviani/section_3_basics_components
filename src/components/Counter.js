@@ -1,12 +1,10 @@
 import React from "react";
 
-function Counter() {
-
-    let counterNo = 0
+function Counter({counterNumber}) {
 
     return (
         <>
-            Counter: {counterNo}
+            Counter: {counterNumber}
         </>
     )
 }
