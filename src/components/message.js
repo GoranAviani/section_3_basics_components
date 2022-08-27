@@ -1,22 +1,13 @@
-import React, {useState} from "react";
+import React from "react";
 
 
-function toogleMessageFun(toogleMessage, setToggleMessage) {
-    if (toogleMessage === "true") {
-        setToggleMessage("false")
-    } else {
-        setToggleMessage("true")
-    }
-}
-
-function Message({message}) {
-    const [toogleMessage, setToggleMessage] = useState("true")
+function Message({message, toogleMessageFun, toogleMessage}) {
 
     return (
         <>
             {toogleMessage === "true" && (<>message is : {message}</>)}
             <button onClick={() => {
-                toogleMessageFun(toogleMessage, setToggleMessage)
+                toogleMessageFun(toogleMessage)
             }}>Toggle message visibility
             </button>
         </>
